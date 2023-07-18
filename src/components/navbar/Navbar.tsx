@@ -5,6 +5,7 @@ import {
   QueueListIcon,
   Cog8ToothIcon,
   RectangleGroupIcon,
+  MicrophoneIcon,
 } from '@heroicons/react/24/outline';
 import './navbar.scss';
 
@@ -16,8 +17,11 @@ const Navbar = () => {
       </div>
 
       <div className="searchBar">
-        Search-Bar
-        <MagnifyingGlassIcon />
+        Search...
+        <span className="search-icon-bg">
+          <MagnifyingGlassIcon />
+          <MicrophoneIcon />
+        </span>
       </div>
 
       <div className="navIcons">

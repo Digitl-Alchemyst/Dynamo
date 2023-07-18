@@ -18,7 +18,7 @@ import {
 export const navMenu = [
   {
     id: 1,
-    title: 'main',
+    title: 'MAIN',
     listItems: [
       {
         id: 1,
@@ -37,7 +37,7 @@ export const navMenu = [
 
   {
     id: 2,
-    title: 'lists',
+    title: 'LIST',
     listItems: [
       {
         id: 1,
@@ -67,7 +67,7 @@ export const navMenu = [
   },
   {
     id: 3,
-    title: 'general',
+    title: 'GENERAL',
     listItems: [
       {
         id: 1,
@@ -97,7 +97,7 @@ export const navMenu = [
   },
   {
     id: 4,
-    title: 'Maintenance',
+    title: 'MAINTENANCE',
     listItems: [
       {
         id: 1,
@@ -115,7 +115,7 @@ export const navMenu = [
   },
   {
     id: 5,
-    title: 'Analytics',
+    title: 'ANALYTICS',
     listItems: [
       {
         id: 1,

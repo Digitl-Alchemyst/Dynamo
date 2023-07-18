@@ -21,23 +21,38 @@
 }
 
 .navbar .searchBar {
-  flex: 1; /* Use flex-grow to make the searchBar fill available space */
+  flex: 1;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   background-color: #37373b;
-  color: #fff; /* Color for search bar text */
+  color: #fff;
   border: 2px solid #a8a29e;
   margin-right: 2rem;
   margin-left: 2rem;
+  padding-left: 1rem;
   border-radius: 2rem;
 }
 
 .navbar .searchBar svg {
   height: 1.5rem;
   width: 1.5rem;
-  margin-left: 0.5rem;
   cursor: pointer;
+}
+
+.navbar .searchBar .search-icon-bg {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  background-color: #262628;
+  padding: 0.5rem;
+  gap: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  // border-radius: 2rem;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  // border-radius: 50%;
 }
 
 .navbar .navIcons {
@@ -48,8 +63,8 @@
 }
 
 .navbar .navIcons svg {
-  height: 1.5rem;
-  width: 1.5rem;
+  height: 1.75rem;
+  width: 1.75rem;
   cursor: pointer;
 }
 
