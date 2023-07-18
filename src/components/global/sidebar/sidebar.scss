@@ -1,42 +1,42 @@
 .sidebar {
-
   color: #a8a29e;
 }
 
-.sidebar .title{
+.sidebar .title {
   margin-bottom: 5px;
   border-bottom: 1px solid;
 }
 
-.sidebar .list{
+.sidebar .list {
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
+  gap: 3px;
+  // margin-bottom: 15px;
 }
 
-.sidebar .list .itemName{
+.sidebar .list .itemName {
   font-weight: 200;
   font-size: 16px;
 }
 
-.sidebar .list svg{
+.sidebar .list svg {
   height: 24px;
   width: 24px;
 }
 
-.sidebar .listItem{
+.sidebar .listItem {
   display: flex;
   align-items: center;
   gap: 10px;
   padding: 10px;
   border-radius: 5px;
 
-  &:hover{
+  &:hover {
     background-color: #75716e;
     color: #4c4947;
   }
 
-  &:active{
+  &:active {
     background-color: #4c4947;
     color: #3f3c39;
   }

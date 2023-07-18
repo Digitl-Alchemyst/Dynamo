@@ -1,7 +1,7 @@
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
-import Navbar from './components/navbar/Navbar';
-import Sidebar from './components/sidebar/Sidebar';
-import Footer from './components/footer/Footer';
+import Navbar from './components/global/navbar/Navbar';
+import Sidebar from './components/global/sidebar/Sidebar';
+import Footer from './components/global/footer/Footer';
 import Home from './pages/home/Home';
 import Products from './pages/products/Products';
 import Users from './pages/users/Users';
