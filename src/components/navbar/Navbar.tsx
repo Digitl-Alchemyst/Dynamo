@@ -12,21 +12,29 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="logo">
-        <img src="Logo-02.png" alt="logo" />
+        <img src="Logo-02.png" alt="logo" height="75px" width="200px" />
       </div>
-      <div className="searchBar">Search Bar</div>
-      <div className="navIcons">
+
+      <div className="searchBar">
+        Search-Bar
         <MagnifyingGlassIcon />
+      </div>
+
+      <div className="navIcons">
         <RectangleGroupIcon />
         <QueueListIcon />
+
         <div className="notifications">
-          <BellIcon /> <BellAlertIcon />
+          {/* <BellIcon />  */}
+          <BellAlertIcon />
           <span>1</span>
         </div>
+
         <div className="user">
-          <img src="" alt="" />
-          <span>User.Name</span>
+          <span>Digitl Alchemyst</span>
+          <img src="/profile.jpg" alt="" />
         </div>
+
         <Cog8ToothIcon />
       </div>
     </div>

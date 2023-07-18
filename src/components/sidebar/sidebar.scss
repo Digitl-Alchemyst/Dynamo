@@ -2,3 +2,42 @@
 
   color: #a8a29e;
 }
+
+.sidebar .title{
+  margin-bottom: 5px;
+  border-bottom: 1px solid;
+}
+
+.sidebar .list{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.sidebar .list .itemName{
+  font-weight: 200;
+  font-size: 16px;
+}
+
+.sidebar .list svg{
+  height: 24px;
+  width: 24px;
+}
+
+.sidebar .listItem{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 5px;
+
+  &:hover{
+    background-color: #75716e;
+    color: #4c4947;
+  }
+
+  &:active{
+    background-color: #4c4947;
+    color: #3f3c39;
+  }
+}

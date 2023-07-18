@@ -1,15 +1,92 @@
 .navbar {
   display: flex;
-  flex-direction: row;
   align-items: center;
+  justify-content: space-between;
   background-color: #27272a;
   color: #a8a29e;
+  padding: 0.5rem;
+  border: 2px solid #a8a29e;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 7px #ffffff80;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 
-.navIcons {
+.navbar .logo {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  font-size: 5rem;
-  
+  object-fit: fill;
+  cursor: pointer;
+}
+
+.navbar .searchBar {
+  flex: 1; /* Use flex-grow to make the searchBar fill available space */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #37373b;
+  color: #fff; /* Color for search bar text */
+  border: 2px solid #a8a29e;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  border-radius: 2rem;
+}
+
+.navbar .searchBar svg {
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+
+.navbar .navIcons {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  gap: 1rem;
+}
+
+.navbar .navIcons svg {
+  height: 1.5rem;
+  width: 1.5rem;
+  cursor: pointer;
+}
+
+.navbar .navIcons .notifications {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+  gap: 1rem;
+}
+
+.navbar .navIcons .notifications span {
+  background-color: red;
+  color: white;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  position: absolute;
+  top: -10px;
+  right: -15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.navbar .navIcons .user {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+  gap: 1rem;
+}
+
+.navbar .navIcons .user img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
 }
