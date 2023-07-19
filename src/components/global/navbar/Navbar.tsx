@@ -1,6 +1,6 @@
 import {
   MagnifyingGlassIcon,
-  BellIcon,
+  // BellIcon,
   BellAlertIcon,
   QueueListIcon,
   Cog8ToothIcon,

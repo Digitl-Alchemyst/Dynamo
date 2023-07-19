@@ -1,0 +1,81 @@
+.topSales h1 {
+  margin-bottom: 10px;
+}
+
+.topSales .list {
+  overflow: scroll;
+  height: 53vh;
+  overflow-x: hidden;
+}
+
+/* Width of the scrollbar */
+.topSales .list::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Styling the track */
+.topSales .list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+
+/* Styling the thumb */
+.topSales .list::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px; 
+}
+
+/* Styling the thumb on hover */
+.topSales .list::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Styling the area when scrolled */
+.topSales .list::-webkit-scrollbar-track-piece:start {
+  background-color: #555; 
+  border-radius: 5px;
+}
+
+/* Styling the area when scrolled */
+.topSales .list::-webkit-scrollbar-track-piece:end {
+  border-radius: 5px;
+}
+
+.topSales .list .listItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.topSales .list .listItem .user {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 5px;
+}
+
+.topSales .list .listItem .user img {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.topSales .list .listItem .user .userText {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.topSales .list .listItem .user .userText .username {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.topSales .list .listItem .user .userText .email {
+  font-size: 12px;
+}
+
+.topSales .list .listItem .amount {
+  font-weight: 500;
+  padding-right: 10px;
+}
