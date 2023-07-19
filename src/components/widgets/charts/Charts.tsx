@@ -3,13 +3,13 @@ import './charts.scss';
 import { LineChart, Line, ResponsiveContainer, Tooltip } from 'recharts';
 
 type Props = {
-    color: string;
-    icon: string;
-    title: string;
-    dataKey: string;
-    number: number | string;
-    percentage: number;
-    chartData: object[];
+  color: string;
+  icon: string;
+  title: string;
+  dataKey: string;
+  number: number | string;
+  percentage: number;
+  chartData: object[];
 };
 
 const Charts = (props: Props) => {
@@ -21,7 +21,9 @@ const Charts = (props: Props) => {
           <span>{props.title}</span>
         </div>
         <h1>{props.number}</h1>
-        <Link to="/" style={{ color: props.color }}>View all</Link>
+        <Link to="/" style={{ color: props.color }}>
+          View all
+        </Link>
       </div>
       <div className="chartInfo">
         <div className="chart">
@@ -44,7 +46,12 @@ const Charts = (props: Props) => {
           </ResponsiveContainer>
         </div>
         <div className="texts">
-          <span className="percentage" style={{ color: props.percentage < 0 ? 'tomato' : 'limegreen' }}>{props.percentage}%</span>
+          <span
+            className="percentage"
+            style={{ color: props.percentage < 0 ? 'tomato' : 'limegreen' }}
+          >
+            {props.percentage}%
+          </span>
           <span className="duration">This Month</span>
         </div>
       </div>

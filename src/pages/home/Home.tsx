@@ -1,7 +1,7 @@
-import './home.scss'
-import TopSales from '../../components/widgets/topSales/TopSales'
+import './home.scss';
+import TopSales from '../../components/widgets/topSales/TopSales';
 import Charts from '../../components/widgets/charts/Charts';
-
+import { chartBoxTeam, chartBoxProduct, chartBoxRevenue, chartBoxConversion } from '../../components/widgets/charts/chartBoxData';
 
 export const Home = () => {
   return (
@@ -11,17 +11,17 @@ export const Home = () => {
           <TopSales />
         </div>
         <div className="widget widget2">
-          <Charts />
+          <Charts {...chartBoxTeam} />
         </div>
         <div className="widget widget3">
-          <Charts />
+          <Charts {...chartBoxProduct}/>
         </div>
         <div className="widget widget4">Widget 4</div>
         <div className="widget widget5">
-          <Charts />
+          <Charts {...chartBoxRevenue}/>
         </div>
         <div className="widget widget6">
-          <Charts />
+          <Charts {...chartBoxConversion}/>
         </div>
         <div className="widget widget7">Widget 7</div>
         <div className="widget widget8">Widget 8</div>
