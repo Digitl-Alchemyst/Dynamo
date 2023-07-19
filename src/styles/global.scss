@@ -12,14 +12,15 @@ a {
 }
 
 .appMain {
-  // display: flex;
-  // flex-direction: column;
+  display: flex;
+  flex-direction: column;
   background-color: $bg-dark;
   color: $tx-prim-dark;
   font-family: 'Inter', sans-serif;
   height: 100vh;
   padding-top: 0.5rem;
   overflow: hidden;
+  justify-content: space-between;
 }
 
 .container {
