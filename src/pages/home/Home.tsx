@@ -1,7 +1,19 @@
 import './home.scss';
 import TopSales from '../../components/widgets/topSales/TopSales';
 import Charts from '../../components/widgets/charts/Charts';
-import { chartBoxTeam, chartBoxProduct, chartBoxRevenue, chartBoxConversion } from '../../components/widgets/charts/chartBoxData';
+import {
+  chartBoxTeam,
+  chartBoxProduct,
+  chartBoxRevenue,
+  chartBoxConversion,
+} from '../../components/widgets/charts/chartBoxData';
+import BarCharts from '../../components/widgets/barChart/BarCharts';
+import {
+  barChartDataProfit,
+  barChartDataVisitors,
+} from '../../components/widgets/barChart/barChartData';
+import PieCharts from '../../components/widgets/pieChart/PieCharts';
+import { pieChartDataLeads } from '../../components/widgets/pieChart/pieChartsData';
 
 export const Home = () => {
   return (
@@ -14,18 +26,24 @@ export const Home = () => {
           <Charts {...chartBoxTeam} />
         </div>
         <div className="widget widget3">
-          <Charts {...chartBoxProduct}/>
+          <Charts {...chartBoxProduct} />
         </div>
-        <div className="widget widget4">Widget 4</div>
+        <div className="widget widget4">
+          <PieCharts {...pieChartDataLeads} />
+        </div>
         <div className="widget widget5">
-          <Charts {...chartBoxRevenue}/>
+          <Charts {...chartBoxRevenue} />
         </div>
         <div className="widget widget6">
-          <Charts {...chartBoxConversion}/>
+          <Charts {...chartBoxConversion} />
         </div>
         <div className="widget widget7">Widget 7</div>
-        <div className="widget widget8">Widget 8</div>
-        <div className="widget widget9">Widget 9</div>
+        <div className="widget widget8">
+          <BarCharts {...barChartDataVisitors} />
+        </div>
+        <div className="widget widget9">
+          <BarCharts {...barChartDataProfit} />
+        </div>
       </div>
     </div>
   );
