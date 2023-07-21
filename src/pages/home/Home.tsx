@@ -14,6 +14,8 @@ import {
 } from '../../components/widgets/barChart/barChartData';
 import PieCharts from '../../components/widgets/pieChart/PieCharts';
 import { pieChartDataLeads } from '../../components/widgets/pieChart/pieChartsData';
+import AreaCharts from '../../components/widgets/AreaCharts';
+import { areaChartDataProductRevenue } from '../../components/widgets/areaChartsData';
 
 export const Home = () => {
   return (
@@ -37,7 +39,10 @@ export const Home = () => {
         <div className="widget widget6">
           <Charts {...chartBoxConversion} />
         </div>
-        <div className="widget widget7">Widget 7</div>
+        <div className="widget widget7">
+          <AreaCharts {...areaChartDataProductRevenue} />
+        </div>
+
         <div className="widget widget8">
           <BarCharts {...barChartDataVisitors} />
         </div>
