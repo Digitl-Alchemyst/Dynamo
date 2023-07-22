@@ -69,7 +69,7 @@
   position: relative;
   width: 1px;
   padding-top: 40px;
-  background-color: tomato;
+  background-color: rgb(157, 39, 18,);;
 
   &::after {
     content: '';
@@ -79,7 +79,7 @@
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: rgb(157, 39, 18, 0.85);
+    background-color: rgb(157, 39, 18,);
     transform: translateX(-50%);
   }
 }
@@ -87,7 +87,9 @@
   min-width: 480px;
   padding: 15px;
   margin-left: 1px;
-  background-color: rgb(157, 39, 18, 0.35);
+  background-color: rgb(157, 39, 18, 0.25);
+  border-radius: 3px;
+  border: solid 1px rgb(157, 39, 18, 0.45);
 }
 .details .activity div p{
     margin-bottom: 5px;
