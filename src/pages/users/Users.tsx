@@ -78,8 +78,13 @@ const Users = () => {
         <h1>Sales Team</h1>
         <button onClick={() => setOpen(true)}>Add New User</button>
       </div>
-      <DataTable slug="users" columns={columns} rows={teamSales} />
-      {open && <AddUser setOpen={setOpen} />}
+      {/* Ensure the props passed to DataTable match the Props type */}
+      <DataTable
+        slug="users"
+        columns={columns}
+        rows={teamSales}
+      />
+      {open && <AddUser slug="users" columns={columns} setOpen={setOpen} />}
     </div>
   );
 };
