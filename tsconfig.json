@@ -20,6 +20,12 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src"],
+  "include": [
+    "src",
+    "mockData/pieChartsData.ts",
+    "mockData/simpleChartData.ts",
+    "mockData/barChartData.ts",
+    "mockData/areaChartsData.ts"
+  ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

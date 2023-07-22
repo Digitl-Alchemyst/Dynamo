@@ -1,5 +1,5 @@
 import './topSales.scss';
-import { teamSales } from '../../../../mockData/teamSales';
+import { teamSales } from '../../../../mockData/salesTeam';
 
 const TopSales = () => {
   // Convert salesTotal to numeric value and sort in ascending order

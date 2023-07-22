@@ -6,6 +6,8 @@ export const teamSales = [
     email: 'pfrost0@digg.com',
     salesTotal: '$12418.99',
     img: 'https://randomuser.me/api/portraits/men/2.jpg',
+    verified: true,
+    phoneNumber: '(123) 456-7890',
   },
   {
     id: 2,
@@ -14,6 +16,8 @@ export const teamSales = [
     email: 'mminget1@woothemes.com',
     salesTotal: '$9040.21',
     img: 'https://randomuser.me/api/portraits/women/67.jpg',
+    verified: false,
+    phoneNumber: '(234) 567-8901',
   },
   {
     id: 3,
@@ -22,6 +26,8 @@ export const teamSales = [
     email: 'mlardeur2@ameblo.jp',
     salesTotal: '$9352.91',
     img: 'https://randomuser.me/api/portraits/women/66.jpg',
+    verified: true,
+    phoneNumber: '(345) 678-9012',
   },
   {
     id: 4,
@@ -30,6 +36,8 @@ export const teamSales = [
     email: 'thaszard3@i2i.jp',
     salesTotal: '$8279.61',
     img: 'https://randomuser.me/api/portraits/men/17.jpg',
+    verified: false,
+    phoneNumber: '(456) 789-0123',
   },
   {
     id: 5,
@@ -38,6 +46,8 @@ export const teamSales = [
     email: 'mdrewe4@cornell.edu',
     salesTotal: '$11320.87',
     img: 'https://randomuser.me/api/portraits/women/23.jpg',
+    verified: true,
+    phoneNumber: '(567) 890-1234',
   },
   {
     id: 6,
@@ -46,6 +56,8 @@ export const teamSales = [
     email: 'ppaprotny5@dropbox.com',
     salesTotal: '$12773.66',
     img: 'https://randomuser.me/api/portraits/women/70.jpg',
+    verified: false,
+    phoneNumber: '(678) 901-2345',
   },
   {
     id: 7,
@@ -54,6 +66,8 @@ export const teamSales = [
     email: 'eornelas6@comsenz.com',
     salesTotal: '$9307.01',
     img: 'https://randomuser.me/api/portraits/men/87.jpg',
+    verified: true,
+    phoneNumber: '(789) 012-3456',
   },
   {
     id: 8,
@@ -62,6 +76,8 @@ export const teamSales = [
     email: 'fbrookzie7@ning.com',
     salesTotal: '$5998.81',
     img: 'https://randomuser.me/api/portraits/women/1.jpg',
+    verified: false,
+    phoneNumber: '(890) 123-4567',
   },
   {
     id: 9,
@@ -70,6 +86,8 @@ export const teamSales = [
     email: 'poshiels8@yahoo.co.jp',
     salesTotal: '$7417.51',
     img: 'https://randomuser.me/api/portraits/men/67.jpg',
+    verified: true,
+    phoneNumber: '(901) 234-5678',
   },
   {
     id: 10,
@@ -78,6 +96,8 @@ export const teamSales = [
     email: 'ttanton9@weather.com',
     salesTotal: '$7233.64',
     img: 'https://randomuser.me/api/portraits/women/57.jpg',
+    verified: false,
+    phoneNumber: '(012) 345-6789',
   },
   {
     id: 11,
@@ -86,6 +106,8 @@ export const teamSales = [
     email: 'rnapiera@youtube.com',
     salesTotal: '$10480.21',
     img: 'https://randomuser.me/api/portraits/women/92.jpg',
+    verified: true,
+    phoneNumber: '(123) 456-7890',
   },
   {
     id: 12,
@@ -94,6 +116,8 @@ export const teamSales = [
     email: 'tgadieb@goo.gl',
     salesTotal: '$11750.50',
     img: 'https://randomuser.me/api/portraits/women/0.jpg',
+    verified: false,
+    phoneNumber: '(234) 567-8901',
   },
   {
     id: 13,
@@ -102,6 +126,8 @@ export const teamSales = [
     email: 'mbatemanc@usgs.gov',
     salesTotal: '$8785.94',
     img: 'https://randomuser.me/api/portraits/men/5.jpg',
+    verified: true,
+    phoneNumber: '(345) 678-9012',
   },
   {
     id: 14,
@@ -110,6 +136,8 @@ export const teamSales = [
     email: 'shuckfieldd@goo.gl',
     salesTotal: '$13199.99',
     img: 'https://randomuser.me/api/portraits/men/79.jpg',
+    verified: false,
+    phoneNumber: '(456) 789-0123',
   },
   {
     id: 15,
@@ -118,6 +146,8 @@ export const teamSales = [
     email: 'aroddae@yahoo.co.jp',
     salesTotal: '$5849.82',
     img: 'https://randomuser.me/api/portraits/men/18.jpg',
+    verified: true,
+    phoneNumber: '(567) 890-1234',
   },
   {
     id: 16,
@@ -126,6 +156,8 @@ export const teamSales = [
     email: 'aoliveiraf@google.com.br',
     salesTotal: '$7227.12',
     img: 'https://randomuser.me/api/portraits/men/94.jpg',
+    verified: false,
+    phoneNumber: '(678) 901-2345',
   },
   {
     id: 17,
@@ -134,6 +166,8 @@ export const teamSales = [
     email: 'tweedsg@engadget.com',
     salesTotal: '$10279.10',
     img: 'https://randomuser.me/api/portraits/men/88.jpg',
+    verified: true,
+    phoneNumber: '(789) 012-3456',
   },
   {
     id: 18,
@@ -142,6 +176,8 @@ export const teamSales = [
     email: 'droakeh@example.com',
     salesTotal: '$6895.49',
     img: 'https://randomuser.me/api/portraits/women/28.jpg',
+    verified: false,
+    phoneNumber: '(890) 123-4567',
   },
   {
     id: 19,
@@ -150,6 +186,8 @@ export const teamSales = [
     email: 'cjewissi@deliciousdays.com',
     salesTotal: '$9625.36',
     img: 'https://xsgames.co/randomusers/assets/avatars/female/5.jpg',
+    verified: true,
+    phoneNumber: '(901) 234-5678',
   },
   {
     id: 20,
@@ -158,6 +196,8 @@ export const teamSales = [
     email: 'ininnisj@ed.gov',
     salesTotal: '$7176.32',
     img: 'https://randomuser.me/api/portraits/women/29.jpg',
+    verified: false,
+    phoneNumber: '(012) 345-6789',
   },
   {
     id: 21,
@@ -166,6 +206,8 @@ export const teamSales = [
     email: 'vgetchk@mlb.com',
     salesTotal: '$6357.56',
     img: 'https://randomuser.me/api/portraits/men/60.jpg',
+    verified: true,
+    phoneNumber: '(123) 456-7890',
   },
   {
     id: 22,
@@ -174,6 +216,8 @@ export const teamSales = [
     email: 'vthomassetl@wsj.com',
     salesTotal: '$5855.07',
     img: 'https://randomuser.me/api/portraits/women/24.jpg',
+    verified: true,
+    phoneNumber: '(234) 567-8901',
   },
   {
     id: 23,
@@ -182,6 +226,8 @@ export const teamSales = [
     email: 'mredmaynem@amazon.co.uk',
     salesTotal: '$12999.29',
     img: 'https://randomuser.me/api/portraits/women/47.jpg',
+    verified: false,
+    phoneNumber: '(345) 678-9012',
   },
   {
     id: 24,
@@ -190,6 +236,8 @@ export const teamSales = [
     email: 'fborlessn@csmonitor.com',
     salesTotal: '$5732.01',
     img: 'https://randomuser.me/api/portraits/women/72.jpg',
+    verified: true,
+    phoneNumber: '(456) 789-0123',
   },
   {
     id: 25,
@@ -198,6 +246,8 @@ export const teamSales = [
     email: 'ftuppo@hubpages.com',
     salesTotal: '$7452.55',
     img: 'https://randomuser.me/api/portraits/men/36.jpg',
+    verified: false,
+    phoneNumber: '(567) 890-1234',
   },
   {
     id: 26,
@@ -206,6 +256,8 @@ export const teamSales = [
     email: 'mschwerinp@jiathis.com',
     salesTotal: '$9471.05',
     img: 'https://randomuser.me/api/portraits/women/84.jpg',
+    verified: true,
+    phoneNumber: '(678) 901-2345',
   },
   {
     id: 27,
@@ -214,6 +266,8 @@ export const teamSales = [
     email: 'pbrabynq@ycombinator.com',
     salesTotal: '$10843.62',
     img: 'https://randomuser.me/api/portraits/women/94.jpg',
+    verified: false,
+    phoneNumber: '(789) 012-3456',
   },
   {
     id: 28,
@@ -222,6 +276,8 @@ export const teamSales = [
     email: 'alongboner@dailymail.co.uk',
     salesTotal: '$12102.60',
     img: 'https://randomuser.me/api/portraits/men/55.jpg',
+    verified: true,
+    phoneNumber: '(890) 123-4567',
   },
   {
     id: 29,
@@ -230,6 +286,8 @@ export const teamSales = [
     email: 'gblankhorns@a8.net',
     salesTotal: '$7452.32',
     img: 'https://randomuser.me/api/portraits/men/91.jpg',
+    verified: false,
+    phoneNumber: '(901) 234-5678',
   },
   {
     id: 30,
@@ -238,6 +296,8 @@ export const teamSales = [
     email: 'kfraint@sun.com',
     salesTotal: '$11340.96',
     img: 'https://randomuser.me/api/portraits/men/0.jpg',
+    verified: true,
+    phoneNumber: '(012) 345-6789',
   },
   {
     id: 31,
@@ -246,6 +306,8 @@ export const teamSales = [
     email: 'usteaneu@vinaora.com',
     salesTotal: '$11966.48',
     img: 'https://randomuser.me/api/portraits/women/12.jpg',
+    verified: false,
+    phoneNumber: '(123) 456-7890',
   },
   {
     id: 32,
@@ -254,6 +316,8 @@ export const teamSales = [
     email: 'srobillardv@scientificamerican.com',
     salesTotal: '$9417.07',
     img: 'https://randomuser.me/api/portraits/women/21.jpg',
+    verified: true,
+    phoneNumber: '(234) 567-8901',
   },
   {
     id: 33,
@@ -262,6 +326,8 @@ export const teamSales = [
     email: 'bhurranw@odnoklassniki.ru',
     salesTotal: '$12464.13',
     img: 'https://randomuser.me/api/portraits/women/73.jpg',
+    verified: false,
+    phoneNumber: '(345) 678-9012',
   },
   {
     id: 34,
@@ -270,6 +336,8 @@ export const teamSales = [
     email: 'lpeppardx@businessinsider.com',
     salesTotal: '$9334.81',
     img: 'https://randomuser.me/api/portraits/women/60.jpg',
+    verified: true,
+    phoneNumber: '(456) 789-0123',
   },
   {
     id: 35,
@@ -278,6 +346,8 @@ export const teamSales = [
     email: 'csellarsy@seesaa.net',
     salesTotal: '$6731.71',
     img: 'https://randomuser.me/api/portraits/women/46.jpg',
+    verified: false,
+    phoneNumber: '(567) 890-1234',
   },
   {
     id: 36,
@@ -286,22 +356,28 @@ export const teamSales = [
     email: 'sadkinz@live.com',
     salesTotal: '$5924.65',
     img: 'https://randomuser.me/api/portraits/men/39.jpg',
+    verified: true,
+    phoneNumber: '(678) 901-2345',
   },
   {
     id: 37,
-    firstName: 'Frannie',
-    lastName: 'Gittins',
-    email: 'fgittins10@flavors.me',
-    salesTotal: '$10792.84',
-    img: 'https://xsgames.co/randomusers/assets/avatars/female/6.jpg',
+    firstName: 'Bert',
+    lastName: 'Baudouin',
+    email: 'bbaudouin10@seesaa.net',
+    salesTotal: '$8723.98',
+    img: 'https://randomuser.me/api/portraits/women/43.jpg',
+    verified: false,
+    phoneNumber: '(789) 012-3456',
   },
   {
     id: 38,
-    firstName: 'Dyann',
-    lastName: 'Huikerby',
-    email: 'dhuikerby11@dailymail.co.uk',
-    salesTotal: '$7986.00',
-    img: 'https://xsgames.co/randomusers/assets/avatars/male/0.jpg',
+    firstName: 'Faythe',
+    lastName: 'Staite',
+    email: 'fstaite11@163.com',
+    salesTotal: '$8987.16',
+    img: 'https://randomuser.me/api/portraits/men/89.jpg',
+    verified: true,
+    phoneNumber: '(890) 123-4567',
   },
   {
     id: 39,
@@ -310,6 +386,8 @@ export const teamSales = [
     email: 'dgribble12@answers.com',
     salesTotal: '$6705.46',
     img: 'https://xsgames.co/randomusers/assets/avatars/male/5.jpg',
+    verified: false,
+    phoneNumber: '(901) 234-5678',
   },
   {
     id: 40,
@@ -318,6 +396,8 @@ export const teamSales = [
     email: 'amcmanaman13@businessinsider.com',
     salesTotal: '$6062.15',
     img: 'https://xsgames.co/randomusers/assets/avatars/female/74.jpg',
+    verified: true,
+    phoneNumber: '(012) 345-6789',
   },
   {
     id: 41,
@@ -326,6 +406,8 @@ export const teamSales = [
     email: 'pmathy14@howstuffworks.com',
     salesTotal: '$12569.04',
     img: 'https://xsgames.co/randomusers/assets/avatars/male/57.jpg',
+    verified: true,
+    phoneNumber: '(678) 901-2345',
   },
   {
     id: 42,
@@ -334,6 +416,8 @@ export const teamSales = [
     email: 'ltimmens15@barnesandnoble.com',
     salesTotal: '$5796.78',
     img: 'https://xsgames.co/randomusers/assets/avatars/male/6.jpg',
+    verified: false,
+    phoneNumber: '(789) 012-3456',
   },
   {
     id: 43,
@@ -342,6 +426,8 @@ export const teamSales = [
     email: 'scostall16@jugem.jp',
     salesTotal: '$8112.34',
     img: 'https://xsgames.co/randomusers/assets/avatars/female/22.jpg',
+    verified: true,
+    phoneNumber: '(890) 123-4567',
   },
   {
     id: 44,
@@ -350,6 +436,8 @@ export const teamSales = [
     email: 'oblinder17@bandcamp.com',
     salesTotal: '$8332.11',
     img: 'https://xsgames.co/randomusers/assets/avatars/female/69.jpg',
+    verified: true,
+    phoneNumber: '(901) 234-5678',
   },
   {
     id: 45,
@@ -358,6 +446,8 @@ export const teamSales = [
     email: 'vadney18@csmonitor.com',
     salesTotal: '$8219.15',
     img: 'https://xsgames.co/randomusers/assets/avatars/male/37.jpg',
+    verified: false,
+    phoneNumber: '(012) 345-6789',
   },
   {
     id: 46,
@@ -366,6 +456,8 @@ export const teamSales = [
     email: 'wwilkinson19@cnbc.com',
     salesTotal: '$7024.09',
     img: 'https://xsgames.co/randomusers/assets/avatars/female/5.jpg',
+    verified: true,
+    phoneNumber: '(123) 456-7890',
   },
   {
     id: 47,
@@ -374,6 +466,8 @@ export const teamSales = [
     email: 'kbernardinelli1a@domainmarket.com',
     salesTotal: '$9112.02',
     img: 'https://xsgames.co/randomusers/assets/avatars/female/49.jpg',
+    verified: false,
+    phoneNumber: '(234) 567-8901',
   },
   {
     id: 48,
@@ -382,6 +476,8 @@ export const teamSales = [
     email: 'lkimbell1b@canalblog.com',
     salesTotal: '$10042.03',
     img: 'https://xsgames.co/randomusers/assets/avatars/male/46.jpg',
+    verified: true,
+    phoneNumber: '(345) 678-9012',
   },
   {
     id: 49,
@@ -390,6 +486,8 @@ export const teamSales = [
     email: 'smelin1c@cargocollective.com',
     salesTotal: '$8824.90',
     img: 'https://xsgames.co/randomusers/assets/avatars/male/17.jpg',
+    verified: true,
+    phoneNumber: '(456) 789-0123',
   },
   {
     id: 50,
@@ -398,6 +496,8 @@ export const teamSales = [
     email: 'hbraiden1d@plala.or.jp',
     salesTotal: '$8249.30',
     img: 'https://xsgames.co/randomusers/assets/avatars/female/71.jpg',
+    verified: false,
+    phoneNumber: '(567) 890-1234',
   },
   {
     id: 51,
@@ -406,6 +506,8 @@ export const teamSales = [
     email: 'sskin1e@is.gd',
     salesTotal: '$5787.27',
     img: 'https://xsgames.co/randomusers/assets/avatars/female/20.jpg',
+    verified: true,
+    phoneNumber: '(678) 901-2345',
   },
   {
     id: 52,
@@ -414,6 +516,8 @@ export const teamSales = [
     email: 'kdanieli1f@simplemachines.org',
     salesTotal: '$12693.46',
     img: 'https://xsgames.co/randomusers/assets/avatars/male/42.jpg',
+    verified: true,
+    phoneNumber: '(789) 012-3456',
   },
   {
     id: 53,
@@ -422,6 +526,8 @@ export const teamSales = [
     email: 'dhazelden1g@surveymonkey.com',
     salesTotal: '$6004.92',
     img: 'https://xsgames.co/randomusers/assets/avatars/male/4.jpg',
+    verified: false,
+    phoneNumber: '(890) 123-4567',
   },
   {
     id: 54,
@@ -430,6 +536,8 @@ export const teamSales = [
     email: 'csheach1h@trellian.com',
     salesTotal: '$6673.67',
     img: 'https://xsgames.co/randomusers/assets/avatars/female/7.jpg',
+    verified: true,
+    phoneNumber: '(901) 234-5678',
   },
   {
     id: 55,
@@ -438,6 +546,8 @@ export const teamSales = [
     email: 'dloftus1i@arstechnica.com',
     salesTotal: '$10555.75',
     img: 'https://xsgames.co/randomusers/assets/avatars/female/62.jpg',
+    verified: true,
+    phoneNumber: '(012) 345-6789',
   },
   {
     id: 56,
@@ -446,6 +556,8 @@ export const teamSales = [
     email: 'agourlay1j@vkontakte.ru',
     salesTotal: '$8156.03',
     img: 'https://xsgames.co/randomusers/assets/avatars/female/27.jpg',
+    verified: false,
+    phoneNumber: '(123) 456-7890',
   },
   {
     id: 57,
@@ -454,6 +566,8 @@ export const teamSales = [
     email: 'bseville1k@amazon.co.jp',
     salesTotal: '$11110.20',
     img: 'https://xsgames.co/randomusers/assets/avatars/male/23.jpg',
+    verified: true,
+    phoneNumber: '(234) 567-8901',
   },
   {
     id: 58,
@@ -462,6 +576,8 @@ export const teamSales = [
     email: 'ieskrigge1l@dion.ne.jp',
     salesTotal: '$12145.49',
     img: 'https://xsgames.co/randomusers/assets/avatars/female/66.jpg',
+    verified: false,
+    phoneNumber: '(345) 678-9012',
   },
   {
     id: 59,
@@ -470,6 +586,8 @@ export const teamSales = [
     email: 'stomei1m@gizmodo.com',
     salesTotal: '$8774.84',
     img: 'https://xsgames.co/randomusers/assets/avatars/female/35.jpg',
+    verified: true,
+    phoneNumber: '(456) 789-0123',
   },
   {
     id: 60,
@@ -478,6 +596,8 @@ export const teamSales = [
     email: 'cgentreau1n@tripadvisor.com',
     salesTotal: '$12311.77',
     img: 'https://xsgames.co/randomusers/assets/avatars/male/22.jpg',
+    verified: false,
+    phoneNumber: '(567) 890-1234',
   },
   {
     id: 61,
@@ -486,6 +606,8 @@ export const teamSales = [
     email: 'dolivas1o@japanpost.jp',
     salesTotal: '$13196.43',
     img: 'https://xsgames.co/randomusers/assets/avatars/male/3.jpg',
+    verified: true,
+    phoneNumber: '(678) 901-2345',
   },
   {
     id: 62,
@@ -494,6 +616,8 @@ export const teamSales = [
     email: 'ekirimaa1p@gravatar.com',
     salesTotal: '$13120.97',
     img: 'https://xsgames.co/randomusers/assets/avatars/male/74.jpg',
+    verified: false,
+    phoneNumber: '(789) 012-3456',
   },
   {
     id: 63,
@@ -502,6 +626,8 @@ export const teamSales = [
     email: 'cmckechnie1q@csmonitor.com',
     salesTotal: '$9719.11',
     img: 'https://xsgames.co/randomusers/assets/avatars/male/30.jpg',
+    verified: true,
+    phoneNumber: '(890) 123-4567',
   },
   {
     id: 64,
@@ -510,6 +636,8 @@ export const teamSales = [
     email: 'cpawley1r@hugedomains.com',
     salesTotal: '$11939.82',
     img: 'https://xsgames.co/randomusers/assets/avatars/female/41.jpg',
+    verified: true,
+    phoneNumber: '(901) 234-5678',
   },
   {
     id: 65,
@@ -518,5 +646,7 @@ export const teamSales = [
     email: 'vburrus1s@google.com.br',
     salesTotal: '$8396.84',
     img: 'https://xsgames.co/randomusers/assets/avatars/female/67.jpg',
+    verified: false,
+    phoneNumber: '(012) 345-6789',
   },
 ];

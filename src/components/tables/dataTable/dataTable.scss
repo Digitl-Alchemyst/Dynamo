@@ -1,0 +1,52 @@
+// .dataTable {
+// }
+
+.dataTable .dataGrid {
+  background-color: rgb(198, 199, 200);
+  padding: 10px;
+}
+
+.dataTable .dataGrid .MuiDataGrid-toolbarContainer {
+  flex-direction: row-reverse;
+  padding: 15px;
+}
+
+.dataTable .dataGrid .MuiDataGrid-cell img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.dataTable .dataGrid .MuiDataGrid-row{
+    background-color: #494b49;
+    color: #b9b4b4;
+
+    
+}
+
+.dataTable .dataGrid .MuiButtonBase-root {
+  color: red;
+}
+.dataTable .dataGrid .MuiCheckbox-root {
+  color: green;
+}
+.dataTable .dataGrid .MuiTablePagination-toolbar {
+  color: orange;
+}
+.dataTable .dataGrid .Mui-disabled {
+  color: blue;
+}
+
+.dataTable .dataGrid .action {
+  display: flex;
+  gap: 20px;
+}
+
+.dataTable .dataGrid .action img{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+

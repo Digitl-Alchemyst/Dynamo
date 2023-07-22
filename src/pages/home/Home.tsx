@@ -1,21 +1,21 @@
 import './home.scss';
 import TopSales from '../../components/widgets/topSales/TopSales';
-import Charts from '../../components/widgets/charts/Charts';
+import Charts from '../../components/widgets/charts/SimpleCharts';
 import {
   chartBoxTeam,
   chartBoxProduct,
   chartBoxRevenue,
   chartBoxConversion,
-} from '../../components/widgets/charts/chartBoxData';
+} from '../../../mockData/simpleChartData';
 import BarCharts from '../../components/widgets/barChart/BarCharts';
 import {
   barChartDataProfit,
   barChartDataVisitors,
-} from '../../components/widgets/barChart/barChartData';
+} from '../../../mockData/barChartData';
 import PieCharts from '../../components/widgets/pieChart/PieCharts';
-import { pieChartDataLeads } from '../../components/widgets/pieChart/pieChartsData';
-import AreaCharts from '../../components/widgets/AreaCharts';
-import { areaChartDataProductRevenue } from '../../components/widgets/areaChartsData';
+import { pieChartDataLeads } from '../../../mockData/pieChartsData';
+import AreaCharts from '../../components/widgets/areaChart/AreaCharts';
+import { areaChartDataProductRevenue } from '../../../mockData/areaChartsData';
 
 export const Home = () => {
   return (
