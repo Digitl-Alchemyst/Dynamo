@@ -1,0 +1,77 @@
+.add {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(26, 26, 24, 0.724);
+}
+
+.add .modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem;
+  background-color: rgb(68, 68, 68);
+  border-radius: 1rem;
+  border: 2px solid rgb(148, 148, 148);
+  position: relative;
+}
+
+.add .modal h1 {
+  margin-bottom: 2rem;
+  font-size: 24px;
+  color: rgb(193, 193, 193);
+  position: absolute;
+  top: 1rem;
+  left: 2rem;
+}
+
+.add .modal .close {
+  color: rgb(210, 127, 127);
+  position: absolute;
+  top: 1rem;
+  right: 1.25rem;
+  cursor: pointer;
+}
+
+.add .modal form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 500px;
+}
+
+.add .modal form .item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.add .modal form .item label {
+  font-size: 14px;
+}
+
+.add .modal form .item input {
+  padding: 10px;
+  background-color: transparent;
+  color: rgb(212, 212, 212);
+  outline: none;
+  border: 1px solid rgb(168, 168, 168);
+  border-radius: 4px;
+}
+
+.add .modal .button {
+  position: absolute;
+  bottom: 1rem;
+  right: 1.25rem;
+  padding: 0.5rem;
+  font-weight: bold;
+  border-radius: 8px;
+  border: 1px solid black;
+}

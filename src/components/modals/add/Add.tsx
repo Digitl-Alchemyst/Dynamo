@@ -1,4 +1,4 @@
-import './addUser.scss';
+import './add.scss';
 import { GridColDef } from '@mui/x-data-grid';
 
 type Props = {
@@ -7,13 +7,22 @@ type Props = {
   setOpen: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
-const AddUser = (props: Props) => {
+const Add = (props: Props) => {
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    // Add new item to [Data Storage]
+      // Example
+        //  axios.post( `/api/${slug}s`, {pass any data here} )
+  };
+
   return (
-    <div className="addUser">
+    <div className="add">
       <div className="modal">
         <span className='close' onClick={() => props.setOpen(false)}>X</span>
         <h1>Add new {props.slug}</h1>        
-        <form>
+        <form onSubmit={handleSubmit}>
           {props.columns.filter (item => item.field !== 'id' && item.field !== 'img')
           
           .map(column => (
@@ -23,10 +32,10 @@ const AddUser = (props: Props) => {
             </div>
           ))}
         </form>
-        <button></button>
+        <button className='button'> Add {props.slug}</button>
       </div>
     </div>
   );
 }
 
-export default AddUser
+export default Add

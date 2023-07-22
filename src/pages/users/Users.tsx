@@ -3,7 +3,7 @@ import { GridColDef, GridValueGetterParams } from '@mui/x-data-grid';
 import './users.scss';
 import { teamSales } from '../../../mockData/salesTeam';
 import { useState } from 'react';
-import AddUser from '../../components/modals/addUser/AddUser';
+import Add from '../../components/modals/add/Add';
 
 const columns: GridColDef[] = [
   { field: 'id', headerName: 'ID', width: 50 },
@@ -84,7 +84,7 @@ const Users = () => {
         columns={columns}
         rows={teamSales}
       />
-      {open && <AddUser slug="users" columns={columns} setOpen={setOpen} />}
+      {open && <Add slug="Users" columns={columns} setOpen={setOpen} />}
     </div>
   );
 };

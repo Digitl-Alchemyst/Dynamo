@@ -4,7 +4,7 @@ import Sidebar from './components/global/sidebar/Sidebar';
 import Footer from './components/global/footer/Footer';
 import Home from './pages/home/Home';
 import Products from './pages/products/Products';
-import Users from './pages/users/Users';
+import Users from './pages/Users/Users';
 import './styles/global.scss';
 
 function App() {
