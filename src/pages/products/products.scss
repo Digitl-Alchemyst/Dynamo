@@ -2,3 +2,25 @@
   background-color: #27272a;
   color: #a8a29e;
 }
+
+.products .info {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+// .products .info h1 {
+// }
+
+.products .info button {
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  background-color: #a8a29e;
+  border: solid 2px #c4d6ba;
+  cursor: pointer;
+}
