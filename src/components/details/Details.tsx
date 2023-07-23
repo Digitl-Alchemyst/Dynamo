@@ -24,7 +24,7 @@ type Props = {
 const Details = (props: Props) => {
   // Check if props.info exists before using it
   if (!props.info) {
-    return <div>Product information not available</div>;
+    return <div>information not available</div>;
   }
   return (
     <div className="details">

@@ -8,6 +8,8 @@ export const singleProduct = [
       price: '$58.94',
       genre: 'Comedy',
       export: 'Japan',
+      quantity: 151,
+      inStock: true,
     },
     chart: {
       dataKeys: [
@@ -88,17 +90,18 @@ export const singleProduct = [
       },
     ],
   },
-
   {
     id: 2,
     title: 'American Splendor',
-    price: '$15.40',
     img: 'https://m.media-amazon.com/images/M/MV5BMjA0MjYxNjY1MV5BMl5BanBnXkFtZTcwNDkwMjAwMQ@@._V1_QL75_UX100_CR0,0,100,148_.jpg',
-    quantity: 50,
-    inStock: true,
-    producer: 'Sony Pictures Classics',
-    color: '#2005b6',
-    genre: 'Comedy|Drama',
+    info: {
+      producer: 'Sony Pictures Classics',
+      price: '$15.40',
+      genre: 'Comedy|Drama',
+      export: 'USA',
+      quantity: 92,
+      inStock: true,
+    },
     chart: {
       dataKeys: [
         { name: 'reviews', color: '#82ca9d' },
@@ -181,13 +184,15 @@ export const singleProduct = [
   {
     id: 3,
     title: 'Oak, The (Balanta)',
-    price: '$61.22',
     img: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/7eNbNHfsm7SvyFb8LTzsCQ5WiMK.jpg',
-    quantity: 151,
-    inStock: true,
-    producer: 'Universal Pictures',
-    color: '#2ff11b',
-    genre: 'Comedy|Drama',
+    info: {
+      producer: 'Universal Pictures',
+      price: '$61.22',
+      genre: 'Comedy|Drama',
+      quantity: 151,
+      inStock: true,
+      color: '#2ff11b',
+    },
     chart: {
       dataKeys: [
         { name: 'reviews', color: '#82ca9d' },
@@ -300,13 +305,15 @@ export const singleProduct = [
   {
     id: 4,
     title: "Endurance: Shackleton's Legendary Antarctic Expedition, The",
-    price: '$11.12',
     img: 'https://www.themoviedb.org/t/p/w600_and_h900_bestv2/7zWvRlfnDTbmcGw8F28PEx7KX2k.jpg',
-    quantity: 92,
-    inStock: true,
-    producer: 'National Geographic',
-    color: '#8e90b6',
-    genre: 'Documentary',
+    info: {
+      producer: 'National Geographic',
+      price: '$11.12',
+      genre: 'Documentary',
+      quantity: 92,
+      inStock: true,
+      color: '#8e90b6',
+    },
     chart: {
       dataKeys: [
         { name: 'reviews', color: '#82ca9d' },
@@ -359,5 +366,4 @@ export const singleProduct = [
       ],
     },
   },
-
 ];

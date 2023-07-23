@@ -18,6 +18,7 @@ const User = () => {
   if (!user) {
     return <div>User not found</div>;
   }
+  
   return (
     <div className="user">
       <Details {...user} />
