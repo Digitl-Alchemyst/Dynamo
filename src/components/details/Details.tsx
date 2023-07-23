@@ -13,7 +13,7 @@ type Props = {
   id: number;
   img?: string;
   title: string;
-  info: object;
+  info?: object; // Make info property optional
   chart: {
     dataKeys: { name: string; color: string }[];
     data: object[];
@@ -22,6 +22,10 @@ type Props = {
 };
 
 const Details = (props: Props) => {
+  // Check if props.info exists before using it
+  if (!props.info) {
+    return <div>Product information not available</div>;
+  }
   return (
     <div className="details">
       <div className="view">

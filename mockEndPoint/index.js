@@ -1,18 +1,16 @@
 import express from 'express';
 import cors from 'cors';
+import { singleUser } from '../../../mockData/singleUserData';
+import { singleProduct } from '../../../mockData/singleProductData';
 
 const app = express();
 
 app.use(cors());
 app.use(express.json());
 
-let users = [
-  
-];
+let users = [...singleUser]; // Use spread operator to create a copy of the data
+let products = [...singleProduct]; // Use spread operator to create a copy of the data
 
-let products = [
-  
-];
 
 // GET USERS
 app.get('/api/users', (req, res) => {
