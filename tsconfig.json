@@ -26,6 +26,6 @@
     "mockData/simpleChartData.ts",
     "mockData/barChartData.ts",
     "mockData/areaChartsData.ts"
-  ],
+, "mockData/singleUserData.ts", "mockData/singleProductData.ts"  ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

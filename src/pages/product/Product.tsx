@@ -1,3 +1,4 @@
+import { singleProduct } from '../../../mockData/singleProductData';
 import Details from '../../components/details/Details';
 import './product.scss';
 
@@ -6,7 +7,7 @@ const Product = () => {
 
   return (
     <div className="product">
-      <Details />
+      <Details {...singleProduct}/>
     </div>
   );
 };

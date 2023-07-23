@@ -1,3 +1,4 @@
+import { singleUser } from '../../../mockData/singleUserData';
 import Details from '../../components/details/Details';
 import './user.scss';
 
@@ -6,7 +7,7 @@ const User = () => {
 
   return (
     <div className="user">
-      <Details />
+      <Details {...singleUser} />
     </div>
   );
 };
