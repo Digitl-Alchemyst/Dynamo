@@ -1,9 +1,10 @@
 import DataTable from '../../components/tables/dataTable/DataTable';
 import { GridColDef, GridValueGetterParams } from '@mui/x-data-grid';
 import './users.scss';
-import { teamSales } from '../../../mockData/salesTeam';
+// import { teamSales } from '../../../mockData/salesTeam';
 import { useState } from 'react';
 import Add from '../../components/modals/add/Add';
+import { useQuery } from '@tanstack/react-query';
 
 const columns: GridColDef[] = [
   { field: 'id', headerName: 'ID', width: 50 },
@@ -72,18 +73,25 @@ const columns: GridColDef[] = [
 const Users = () => {
   const [open, setOpen] = useState(false);
 
+  const { isLoading, data } = useQuery({
+    queryKey: ['repoData'],
+    queryFn: () =>
+      fetch('http://localhost:7000/api/users').then((res) =>
+        res.json(),
+      ),
+  });
+
   return (
     <div className="users">
       <div className="info">
         <h1>Sales Team</h1>
         <button onClick={() => setOpen(true)}>Add New User</button>
       </div>
-      {/* Ensure the props passed to DataTable match the Props type */}
-      <DataTable
-        slug="users"
-        columns={columns}
-        rows={teamSales}
-      />
+      {isLoading ? (
+        'The data is loading...'
+      ) : (
+        <DataTable slug="users" columns={columns} rows={data} />
+      )}
       {open && <Add slug="Users" columns={columns} setOpen={setOpen} />}
     </div>
   );

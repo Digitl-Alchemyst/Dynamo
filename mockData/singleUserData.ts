@@ -1,4 +1,31 @@
-export const singleUser = [
+type UserInfo = {
+  id: number;
+  title: string;
+  img: string;
+  info: {
+    username: string;
+    fullname: string;
+    email: string;
+    phone: string;
+    salesTotal: string;
+    status: string;
+  };
+  chart: {
+    dataKeys: { name: string; color: string }[];
+    data: {
+      name: string;
+      sales: number;
+      revenue: number;
+      comission: number;
+    }[];
+  };
+  activities: {
+    text: string;
+    time: string;
+  }[];
+};
+
+export const singleUser: UserInfo[] = [
   {
     id: 1,
     title: 'Pierce Frost',
@@ -154,7 +181,7 @@ export const singleUser = [
       ],
     },
     activities: [
-            {
+      {
         text: '[user] sold [quantity] x [item] for [value]',
         time: '3 day ago',
       },
