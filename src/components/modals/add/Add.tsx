@@ -13,7 +13,7 @@ const Add = (props: Props) => {
 
   const mutation = useMutation({
     mutationFn: async () => {
-      const response = await fetch(`http://localhost:7000/api/users`, {
+      const response = await fetch(`http://localhost:7000/api/${props.slug}`, {
         method: 'post',
         headers: {
           Accept: 'application/json',
@@ -31,12 +31,11 @@ const Add = (props: Props) => {
       });
 
       if (!response.ok) {
-      throw new Error('Failed to add user');
-    }
+        throw new Error('Failed to add user');
+      }
 
-    return response.json();
+      return response.json();
     },
-
     onSuccess: () => {
       queryClient.invalidateQueries([`all${props.slug}s`]);
     },
@@ -47,7 +46,8 @@ const Add = (props: Props) => {
 
     // Add new item to [Data Storage]
     // Example
-    //  axios.post( `/api/${slug}s`, {pass any data here} )
+    // axios.post( `/api/${props.slug}s`, {pass any data here} )
+
     mutation.mutate();
     props.setOpen(false);
     console.log('New User has been added to the database.');
