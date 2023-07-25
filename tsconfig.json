@@ -1,18 +1,23 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
+    "target": "es6",
     "useDefineForClassFields": true,
-    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "module": "ESNext",
     "skipLibCheck": true,
 
     /* Bundler mode */
-    "moduleResolution": "bundler",
+    // "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
+    "allowJs": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
 
     /* Linting */
     "strict": true,
@@ -20,12 +25,15 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
+
   "include": [
-    "src",
+    "src/**/*",
     "mockData/pieChartsData.ts",
     "mockData/simpleChartData.ts",
     "mockData/barChartData.ts",
-    "mockData/areaChartsData.ts"
-, "mockData/singleUserData.ts", "mockData/singleProductData.ts"  ],
+    "mockData/areaChartsData.ts",
+    "mockData/singleUserData.ts",
+    "mockData/singleProductData.ts"
+  ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
