@@ -32,7 +32,7 @@ const columns: GridColDef[] = [
     editable: true,
   },
   {
-    field: 'email',
+    field: 'emailAddress',
     headerName: 'Email',
     type: 'string',
     width: 250,
