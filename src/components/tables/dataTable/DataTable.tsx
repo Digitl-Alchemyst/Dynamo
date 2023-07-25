@@ -12,16 +12,26 @@ type Props = {
 const DataTable = (props: Props) => {
   const queryClient = useQueryClient();
 
-  const mutation = useMutation({
-    mutationFn: (id: number) => {
-      return fetch(`http://localhost:7000/${props.slug}/${id}`, {
-        method: 'delete',
-      });
-    },
-    onSuccess: () => {
-      queryClient.invalidateQueries([`all${props.slug}`]);
-    },
-  });
+ const mutation = useMutation({
+   mutationFn: async (id: number) => {
+     const response = await fetch(
+       `http://localhost:7000/api/${props.slug}/${id}`,
+       {
+         method: 'delete',
+       },
+     );
+
+     if (!response.ok) {
+       throw new Error('Failed to delete user');
+     }
+
+     return response.json();
+   },
+
+   onSuccess: () => {
+     queryClient.invalidateQueries([`all${props.slug}`]);
+   },
+ });
 
   const handleDeleteRow = (id: number) => {
     // API Call to Delete the row item
