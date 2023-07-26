@@ -1,0 +1,5 @@
+
+Delete User modifies the data file by removing types and changing to json
+
+add new user does not show new user in table until refresh
+

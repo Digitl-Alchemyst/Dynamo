@@ -20,13 +20,101 @@ const Add = (props: Props) => {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          id: 111,
-          img: '',
+          id: '',
+          title: 'NSA Evasion Champion',
           firstName: 'Edward',
           lastName: 'Snowden',
           emailAddress: 'Fuck@NSA.gov',
           phoneNumber: '(420) 232-2356',
+          img: 'https://images-na.ssl-images-amazon.com/images/I/91daxCrnYXL.jpg',
+          salesTotal: '$420.69',
           verified: true,
+          info: {
+            username: 'Ed Snowden',
+            fullname: 'Edward Snowden',
+            email: 'Fuck@NSA.gov',
+            phone: '(420) 232-2356',
+            salesTotal: '$420.69',
+            status: 'verified',
+          },
+          chart: {
+            dataKeys: [
+              { name: 'sales', color: '#82ca9d' },
+              { name: 'revenue', color: '#8884d8' },
+              { name: 'comission', color: '#2a8ded' },
+            ],
+            data: [
+              {
+                name: 'Sun',
+                sales: 42,
+                revenue: 3492,
+                comission: 279.36, // 8% of revenue
+              },
+              {
+                name: 'Mon',
+                sales: 30,
+                revenue: 2566,
+                comission: 205.28, // 8% of revenue
+              },
+              {
+                name: 'Tue',
+                sales: 25,
+                revenue: 1867,
+                comission: 149.36, // 8% of revenue
+              },
+              {
+                name: 'Wed',
+                sales: 33,
+                revenue: 4243,
+                comission: 339.44, // 8% of revenue
+              },
+              {
+                name: 'Thu',
+                sales: 22,
+                revenue: 1654,
+                comission: 132.32, // 8% of revenue
+              },
+              {
+                name: 'Fri',
+                sales: 48,
+                revenue: 5387,
+                comission: 430.96, // 8% of revenue
+              },
+              {
+                name: 'Sat',
+                sales: 19,
+                revenue: 1902,
+                comission: 152.16, // 8% of revenue
+              },
+            ],
+          },
+
+          activities: [
+            {
+              text: '[user] sold [quantity] x [item] for [value]',
+              time: '3 day ago',
+            },
+            {
+              text: '[user] sold [quantity] x [item] for [value]',
+              time: '1 week ago',
+            },
+            {
+              text: '[user] sold [quantity] x [item] for [value]',
+              time: '2 weeks ago',
+            },
+            {
+              text: '[user] sold [quantity] x [item] for [value]',
+              time: '1 month ago',
+            },
+            {
+              text: '[user] sold [quantity] x [item] for [value]',
+              time: '1 month ago',
+            },
+            {
+              text: '[user] sold [quantity] x [item] for [value]',
+              time: '2 months ago',
+            },
+          ],
         }),
       });
 
