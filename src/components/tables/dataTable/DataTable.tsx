@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import './dataTable.scss';
 import { DataGrid, GridColDef, GridToolbar } from '@mui/x-data-grid';
 import { useMutation, useQueryClient } from '@tanstack/react-query';
+import React from 'react';
 
 type Props = {
   columns: GridColDef[];

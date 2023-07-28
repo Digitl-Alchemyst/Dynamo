@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import './sidebar.scss';
 import { navMenu } from './navData';
+import React from 'react';
 
 const Sidebar = () => {
   return (

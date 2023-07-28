@@ -1,6 +1,7 @@
 import { useMutation, useQueryClient } from '@tanstack/react-query';
 import './add.scss';
 import { GridColDef } from '@mui/x-data-grid';
+import React from 'react';
 
 type Props = {
   slug: string;
@@ -152,7 +153,16 @@ const Add = (props: Props) => {
           {props.columns
             .filter((item) => item.field !== 'id' && item.field !== 'img')
             .map((column) => (
-              <div className="item">
+              <div className="item" key={column.headerName}>
+                
+                {props.columns
+                  .filter((item) => item.field !== 'id' && item.field !== 'img')
+                  .map((column) => (
+                    <div className="item" key={column.headerName}>
+                      <label>{column.headerName}</label>
+                      <input type={column.type} placeholder={column.field} />
+                    </div>
+                  ))}
                 <label>{column.headerName}</label>
                 <input type={column.type} placeholder={column.field} />
               </div>

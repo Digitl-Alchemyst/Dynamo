@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import Details from '../../components/details/Details';
 import './user.scss';
 import { useQuery } from '@tanstack/react-query';
+import React from 'react';
 
 const User = () => {
   // Fetch Product Data and send to Details Component

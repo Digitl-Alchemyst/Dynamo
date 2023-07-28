@@ -16,6 +16,7 @@ import PieCharts from '../../components/widgets/pieChart/PieCharts';
 import { pieChartDataLeads } from '../../../mockData/pieChartsData';
 import AreaCharts from '../../components/widgets/areaChart/AreaCharts';
 import { areaChartDataProductRevenue } from '../../../mockData/areaChartsData';
+import React from 'react';
 
 export const Home = () => {
   return (

@@ -8,6 +8,7 @@ import {
   Legend,
   ResponsiveContainer,
 } from 'recharts';
+import React from 'react';
 
 type Props = {
   id: number;
@@ -67,6 +68,7 @@ const Details = (props: Props) => {
                   <Line
                     type="monotone"
                     dataKey={dataKey.name}
+                    key={dataKey.name}
                     stroke={dataKey.color}
                     activeDot={{ r: 8 }}
                   />

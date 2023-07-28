@@ -1,5 +1,6 @@
 import './topSales.scss';
 import { teamSales } from '../../../../mockData/salesTeam';
+import React from 'react';
 
 const TopSales = () => {
   // Convert salesTotal to numeric value and sort in ascending order

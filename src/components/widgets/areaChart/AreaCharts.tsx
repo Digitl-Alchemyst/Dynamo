@@ -1,4 +1,5 @@
 import './areaCharts.scss'
+import React from 'react';
 
 import {
   AreaChart,
