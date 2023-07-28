@@ -1,6 +1,30 @@
 @import './theme.scss';
 @import './responsive.scss';
 
+html {
+  height: 100%;
+}
+
+/* Style the main scrollbar for webkit-based browsers */
+html::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 15px;
+
+}
+
+/* Style the scrollbar track */
+html::-webkit-scrollbar-track {
+  background: $hover-01-bg;
+
+}
+
+/* Style the scrollbar thumb (draggable part) */
+html::-webkit-scrollbar-thumb {
+  background: $box-03;
+
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -18,12 +42,14 @@ a {
   background-color: $bg-dark;
   color: $tx-prim-dark;
   font-family: 'Inter', sans-serif;
-  height: 100vh;
+  min-height: 100vh;
   padding-top: 0.5rem;
+  overflow: hidden;
 }
 
 .container {
   display: flex;
+  flex: 1;
   height: auto;
   background-color: $box-01;
 }
@@ -33,16 +59,17 @@ a {
   padding: 5px 10px;
   border-right: 2px solid $silver;
 
-  @include xl{
-    width:200px;
+  @include xl {
+    width: 200px;
   }
 
-  @include lg{
-    width:max-content;
+  @include lg {
+    width: max-content;
   }
 }
 
-.contentContainer {
+.appMain .container .contentContainer {
   width: 99%;
   padding: 5px 10px;
+  flex: 1;
 }
