@@ -1,9 +1,10 @@
-// .dataTable {
-// }
+@import '../../../styles/theme.scss';
+@import '../../../styles/responsive.scss';
 
 .dataTable .dataGrid {
-  background-color: rgb(198, 199, 200);
+  background-color: $box-05;
   padding: 10px;
+  color: $tx-sec-light;
 }
 
 .dataTable .dataGrid .MuiDataGrid-toolbarContainer {
@@ -18,24 +19,22 @@
   object-fit: cover;
 }
 
-.dataTable .dataGrid .MuiDataGrid-row{
-    background-color: #494b49;
-    color: #b9b4b4;
-
-    
+.dataTable .dataGrid .MuiDataGrid-row {
+  background-color: $box-03;
+  color: $tx-prim-dark;
 }
 
 .dataTable .dataGrid .MuiButtonBase-root {
-  color: red;
+  color: $tx-prim-light;
 }
 .dataTable .dataGrid .MuiCheckbox-root {
-  color: green;
+  color: $tx-prim-light;
 }
 .dataTable .dataGrid .MuiTablePagination-toolbar {
-  color: orange;
+  color: $tx-prim-light;
 }
 .dataTable .dataGrid .Mui-disabled {
-  color: blue;
+  color: $tx-prim-light;
 }
 
 .dataTable .dataGrid .action {
@@ -43,10 +42,8 @@
   gap: 20px;
 }
 
-.dataTable .dataGrid .action img{
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
+.dataTable .dataGrid .action img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
 }
-
-

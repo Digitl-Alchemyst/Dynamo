@@ -1,6 +1,7 @@
 // Background Colors
 $bg-dark: #18181b;
 $bg-light: #e4e4e7;
+$modal: rgba(26, 26, 24, 0.724);
 
 // Text Colors
 $tx-prim-dark: #cacaca;
@@ -11,8 +12,9 @@ $tx-sec-light: #57534e;
 // Box Colors
 $box-01: #27272a;
 $box-02: #39393e;
-$box-03: #37373b;
+$box-03: #555558;
 $box-04: #262628;
+$box-05: #a4a4ac;
 
 //Accent Colors
 $hover-01-bg: #75716e;
@@ -22,5 +24,10 @@ $active-01-bg: #4c4947;
 $active-01-tx: #3f3c39;
 
 $gold: #d7d064;
-$bronze: #946f29;
+$bronze: #baa038;
 $silver: #a8adae;
+
+// Details Activity Colors
+$act-dot: rgb(157, 39, 18);
+$act-line: rgb(157, 39, 18, 0.65);
+$act-box: rgb(157, 39, 18, 0.25);

@@ -1,6 +1,9 @@
+@import '../../../styles/theme.scss';
+@import '../../../styles/responsive.scss';
+
 .footer {
-  background-color: #27272a;
-  color: #a8a29e;
+  background-color: $box-01;
+  color: $silver;
   width: 100%;
   display: flex;
   align-items: center;

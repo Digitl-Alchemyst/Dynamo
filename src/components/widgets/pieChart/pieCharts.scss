@@ -9,6 +9,8 @@
 }
 
 .pieChartBox h1 {
+  color: $silver;
+
   @include lg {
     font-size: 24px;
   }

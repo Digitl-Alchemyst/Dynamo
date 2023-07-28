@@ -1,6 +1,9 @@
+@import '../../styles/theme.scss';
+@import '../../styles/responsive.scss';
+
 .products {
-  background-color: #27272a;
-  color: #a8a29e;
+  background-color: $box-01;
+  color: $silver;
 }
 
 .products .info {
@@ -20,7 +23,8 @@
   padding-left: 10px;
   padding-right: 10px;
   border-radius: 10px;
-  background-color: #a8a29e;
-  border: solid 2px #c4d6ba;
+  color: $tx-sec-dark;
+  background-color: $box-03;
+  border: solid 2px $tx-prim-dark;
   cursor: pointer;
 }
