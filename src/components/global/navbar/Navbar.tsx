@@ -8,7 +8,6 @@ import {
   MicrophoneIcon,
 } from '@heroicons/react/24/outline';
 import './navbar.scss';
-import React from 'react';
 
 const Navbar = () => {
   return (

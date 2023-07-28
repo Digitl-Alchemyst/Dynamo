@@ -8,7 +8,6 @@ import {
   Legend,
   ResponsiveContainer,
 } from 'recharts';
-import React from 'react';
 
 type Props = {
   id: number;

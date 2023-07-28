@@ -1,6 +1,5 @@
 import { BarChart, Bar, Tooltip, ResponsiveContainer } from 'recharts';
 import './barCharts.scss';
-import React from 'react';
 
 type Props = {
   title: string;

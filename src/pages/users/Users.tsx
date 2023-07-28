@@ -5,7 +5,6 @@ import './users.scss';
 import { useState } from 'react';
 import Add from '../../components/modals/add/Add';
 import { useQuery } from '@tanstack/react-query';
-import React from 'react';
 
 const columns: GridColDef[] = [
   { field: 'id', headerName: 'ID', width: 50 },
@@ -77,9 +76,7 @@ const Users = () => {
   const { isLoading, data } = useQuery({
     queryKey: ['allusers'],
     queryFn: () =>
-      fetch('http://localhost:7000/api/users').then((res) =>
-        res.json(),
-      ),
+      fetch('http://localhost:7000/api/users').then((res) => res.json()),
   });
 
   return (

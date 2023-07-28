@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom';
 import './dataTable.scss';
 import { DataGrid, GridColDef, GridToolbar } from '@mui/x-data-grid';
 import { useMutation, useQueryClient } from '@tanstack/react-query';
-import React from 'react';
 
 type Props = {
   columns: GridColDef[];
@@ -13,26 +12,26 @@ type Props = {
 const DataTable = (props: Props) => {
   const queryClient = useQueryClient();
 
- const mutation = useMutation({
-   mutationFn: async (id: number) => {
-     const response = await fetch(
-       `http://localhost:7000/api/${props.slug}/${id}`,
-       {
-         method: 'delete',
-       },
-     );
+  const mutation = useMutation({
+    mutationFn: async (id: number) => {
+      const response = await fetch(
+        `http://localhost:7000/api/${props.slug}/${id}`,
+        {
+          method: 'delete',
+        },
+      );
 
-     if (!response.ok) {
-       throw new Error('Failed to delete user');
-     }
+      if (!response.ok) {
+        throw new Error('Failed to delete user');
+      }
 
-     return response.json();
-   },
+      return response.json();
+    },
 
-   onSuccess: () => {
-     queryClient.invalidateQueries([`all${props.slug}`]);
-   },
- });
+    onSuccess: () => {
+      queryClient.invalidateQueries([`all${props.slug}`]);
+    },
+  });
 
   const handleDeleteRow = (id: number) => {
     // API Call to Delete the row item

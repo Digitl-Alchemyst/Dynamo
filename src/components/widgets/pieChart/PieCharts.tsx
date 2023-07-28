@@ -1,6 +1,5 @@
 import './pieCharts.scss';
 import { ResponsiveContainer, Pie, PieChart, Cell, Tooltip } from 'recharts';
-import React from 'react';
 
 interface PieData {
   name: string;

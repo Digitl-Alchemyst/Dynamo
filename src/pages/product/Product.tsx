@@ -2,7 +2,6 @@ import { useParams } from 'react-router-dom';
 import { singleProduct } from '../../../mockData/singleProductData';
 import Details from '../../components/details/Details';
 import './product.scss';
-import React from 'react';
 
 const Product = () => {
   // Get the product ID from the URL using useParams()

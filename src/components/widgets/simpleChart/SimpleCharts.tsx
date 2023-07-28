@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import './simpleCharts.scss';
 import { LineChart, Line, ResponsiveContainer, Tooltip } from 'recharts';
-import React from 'react';
 
 type Props = {
   color: string;

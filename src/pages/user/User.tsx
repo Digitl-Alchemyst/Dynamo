@@ -3,13 +3,11 @@ import { useParams } from 'react-router-dom';
 import Details from '../../components/details/Details';
 import './user.scss';
 import { useQuery } from '@tanstack/react-query';
-import React from 'react';
 
 const User = () => {
   // Fetch Product Data and send to Details Component
   // Get the user ID from the URL using useParams()
   const { id } = useParams<{ id?: string }>();
-  
 
   // Check if the 'id' exists and is a valid number before converting it
   const userID = parseInt(id || ''); // Use empty string as a default value if 'id' is undefined
@@ -29,7 +27,7 @@ const User = () => {
   if (!data) {
     return <div>User not found</div>;
   }
-  
+
   return (
     <div className="user">
       {isLoading ? 'The data is loading...' : <Details {...data} />}

@@ -2,9 +2,8 @@ import './products.scss';
 import { useState } from 'react';
 import Add from '../../components/modals/add/Add';
 import DataTable from '../../components/tables/dataTable/DataTable';
-import { GridColDef, } from '@mui/x-data-grid';
+import { GridColDef } from '@mui/x-data-grid';
 import { productMovies } from '../../../mockData/productData';
-import React from 'react';
 
 const columns: GridColDef[] = [
   { field: 'id', headerName: 'ID', width: 50 },
