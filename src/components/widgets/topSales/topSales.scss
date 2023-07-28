@@ -1,5 +1,12 @@
+@import '../../../styles/responsive.scss';
+@import '../../../styles/theme.scss';
+
 .topSales h1 {
   margin-bottom: 10px;
+
+    @include lg {
+    font-size: 24px;
+  }
 }
 
 .topSales .list {

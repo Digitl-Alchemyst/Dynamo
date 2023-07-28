@@ -1,6 +1,6 @@
 import './home.scss';
 import TopSales from '../../components/widgets/topSales/TopSales';
-import Charts from '../../components/widgets/charts/SimpleCharts';
+import Charts from '../../components/widgets/simpleChart/SimpleCharts';
 import {
   chartBoxTeam,
   chartBoxProduct,
@@ -20,7 +20,7 @@ import { areaChartDataProductRevenue } from '../../../mockData/areaChartsData';
 export const Home = () => {
   return (
     <div className="home">
-      <div className="container">
+      <div className="widgetContainer">
         <div className="widget widget1">
           <TopSales />
         </div>

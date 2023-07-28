@@ -1,14 +1,17 @@
+@import '../../../styles/theme.scss';
+@import '../../../styles/responsive.scss';
+
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #27272a;
-  color: #a8a29e;
+  background-color: $box-01;
+  color: $tx-prim-dark;
   padding: 0.5rem;
-  border: 2px solid #a8a29e;
+  border: 1px solid $tx-prim-dark;
   border-radius: 1rem;
   margin-bottom: 1rem;
-  box-shadow: 0 0 7px #ffffff80;
+  box-shadow: 0 0 7px $gold;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
 }
@@ -25,13 +28,17 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #37373b;
-  color: #fff;
-  border: 2px solid #a8a29e;
+  background-color: $box-03;
+  color: $tx-sec-dark;
+  border: 2px solid $silver;
   margin-right: 2rem;
   margin-left: 2rem;
   padding-left: 1rem;
   border-radius: 2rem;
+
+  @include lg {
+    display: none;
+  }
 }
 
 .navbar .searchBar svg {
@@ -44,7 +51,7 @@
   display: flex;
   align-items: center;
   justify-content: end;
-  background-color: #262628;
+  background-color: $box-04;
   padding: 0.5rem;
   gap: 1.5rem;
   padding-left: 1rem;
@@ -66,6 +73,10 @@
   height: 1.75rem;
   width: 1.75rem;
   cursor: pointer;
+
+  @include sm {
+    display: none;
+  }
 }
 
 .navbar .navIcons .notifications {
@@ -74,11 +85,15 @@
   align-items: center;
   margin-left: 1rem;
   gap: 1rem;
+
+  @include md {
+    display: none;
+  }
 }
 
 .navbar .navIcons .notifications span {
-  background-color: red;
-  color: white;
+  background-color: tomato;
+  color: $tx-sec-dark;
   width: 16px;
   height: 16px;
   border-radius: 50%;
@@ -98,10 +113,27 @@
   gap: 1rem;
 }
 
+.navbar .navIcons .user .userName {
+  display: flex;
+  align-items: center;
+  object-fit: cover;
+  cursor: pointer;
+
+  @include md {
+    display: none;
+  }
+}
+
 .navbar .navIcons .user img {
   width: 30px;
   height: 30px;
   border-radius: 50%;
   object-fit: cover;
   cursor: pointer;
+
+  @include sm {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+  }
 }

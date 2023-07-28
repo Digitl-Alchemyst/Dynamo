@@ -35,8 +35,10 @@ const Navbar = () => {
         </div>
 
         <div className="user">
-          <span>Digitl Alchemyst</span>
-          <img src="/profile.jpg" alt="" />
+          <div className="userName">
+            <span>Digitl Alchemyst</span>
+          </div>
+            <img src="/profile.jpg" alt="" />
         </div>
 
         <Cog8ToothIcon />
