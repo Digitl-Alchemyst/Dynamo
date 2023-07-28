@@ -1,17 +1,23 @@
+@import '../../../styles/theme.scss';
+@import '../../../styles/responsive.scss';
+
 .sidebar {
-  color: #a8a29e;
+  color: $tx-prim-dark;
 }
 
 .sidebar .title {
   margin-bottom: 5px;
   border-bottom: 1px solid;
+
+  @include lg {
+    display: none;
+  }
 }
 
 .sidebar .list {
   display: flex;
   flex-direction: column;
   gap: 3px;
-  // margin-bottom: 15px;
 }
 
 .sidebar .list .itemName {
@@ -32,12 +38,18 @@
   border-radius: 5px;
 
   &:hover {
-    background-color: #75716e;
-    color: #4c4947;
+    background-color: $hover-01-bg;
+    color: $hover-01-tx;
   }
 
   &:active {
-    background-color: #4c4947;
-    color: #3f3c39;
+    background-color: $active-01-bg;
+    color: $active-01-tx;
+  }
+}
+
+.sidebar .listItem .itemName {
+  @include lg {
+    display: none;
   }
 }

@@ -1,3 +1,6 @@
+@import '../../../styles/responsive.scss';
+@import '../../../styles/theme.scss';
+
 .barChartBox {
   width: 99%;
   height: 99%;
@@ -6,4 +9,9 @@
 .barChartBox h1 {
   font-size: 20px;
   margin-bottom: 10px;
+  color: $silver;
+
+  @include lg {
+    font-size: 18px;
+  }
 }

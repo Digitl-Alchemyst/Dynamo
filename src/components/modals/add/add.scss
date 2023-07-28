@@ -1,3 +1,6 @@
+@import '../../../styles/theme.scss';
+@import '../../../styles/responsive.scss';
+
 .add {
   display: flex;
   align-items: center;
@@ -7,7 +10,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(26, 26, 24, 0.724);
+  background-color: $modal;
 }
 
 .add .modal {
@@ -16,23 +19,23 @@
   align-items: center;
   justify-content: center;
   padding: 5rem;
-  background-color: rgb(68, 68, 68);
+  background-color: $box-01;
   border-radius: 1rem;
-  border: 2px solid rgb(148, 148, 148);
+  border: 2px solid $tx-sec-dark;
   position: relative;
 }
 
 .add .modal h1 {
   margin-bottom: 2rem;
   font-size: 24px;
-  color: rgb(193, 193, 193);
+  color: $tx-sec-dark;
   position: absolute;
   top: 1rem;
   left: 2rem;
 }
 
 .add .modal .close {
-  color: rgb(210, 127, 127);
+  color:tomato;
   position: absolute;
   top: 1rem;
   right: 1.25rem;
@@ -55,14 +58,15 @@
 
 .add .modal form .item label {
   font-size: 14px;
+  color: $tx-sec-dark;
 }
 
 .add .modal form .item input {
   padding: 10px;
   background-color: transparent;
-  color: rgb(212, 212, 212);
+  color: $tx-sec-light;
   outline: none;
-  border: 1px solid rgb(168, 168, 168);
+  border: 1px solid $tx-prim-dark;
   border-radius: 4px;
 }
 

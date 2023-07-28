@@ -1,4 +1,5 @@
 @import './theme.scss';
+@import './responsive.scss';
 
 * {
   margin: 0;
@@ -19,24 +20,29 @@ a {
   font-family: 'Inter', sans-serif;
   height: 100vh;
   padding-top: 0.5rem;
-  // overflow: hidden;
-  justify-content: space-between;
 }
 
 .container {
   display: flex;
   height: auto;
+  background-color: $box-01;
 }
 
 .menuContainer {
-  width: 250px;
+  width: 225px;
   padding: 5px 10px;
-  border-right: 2px solid #52525b;
-  background-color: #27272a;
+  border-right: 2px solid $silver;
+
+  @include xl{
+    width:200px;
+  }
+
+  @include lg{
+    width:max-content;
+  }
 }
 
 .contentContainer {
-  width: 100%;
+  width: 99%;
   padding: 5px 10px;
-  background-color: #27272a;
 }

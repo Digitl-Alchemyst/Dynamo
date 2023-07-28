@@ -1,5 +1,13 @@
+@import '../../../styles/responsive.scss';
+@import '../../../styles/theme.scss';
+
 .topSales h1 {
   margin-bottom: 10px;
+  color: $silver;
+
+    @include lg {
+    font-size: 24px;
+  }
 }
 
 .topSales .list {
@@ -15,24 +23,24 @@
 
 /* Styling the track */
 .topSales .list::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: $hover-01-bg;
   border-radius: 5px;
 }
 
 /* Styling the thumb */
 .topSales .list::-webkit-scrollbar-thumb {
-  background: #888;
+  background: $box-03;
   border-radius: 5px; 
 }
 
 /* Styling the thumb on hover */
 .topSales .list::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: $silver;
 }
 
 /* Styling the area when scrolled */
 .topSales .list::-webkit-scrollbar-track-piece:start {
-  background-color: #555; 
+  background-color: $active-01-bg; 
   border-radius: 5px;
 }
 

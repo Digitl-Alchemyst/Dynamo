@@ -1,12 +1,23 @@
-.areaChart{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+@import '../../../styles/responsive.scss';
+@import '../../../styles/theme.scss';
+
+.areaChart {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.areaChart .chart{
-    width: 100%;
-    height: 350px;
+.areaChart h1 {
+  color: $silver;
+
+  @include lg {
+    font-size: 24px;
+  }
+}
+
+.areaChart .chart {
+  width: 100%;
+  height: 350px;
 }
